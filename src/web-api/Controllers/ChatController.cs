@@ -18,6 +18,7 @@ namespace web_api.Controllers
         {
             _chatHub = chatHub;
         }
+        
         [HttpGet("ws")]
         public async Task Get(){
             if(HttpContext.WebSockets.IsWebSocketRequest){
